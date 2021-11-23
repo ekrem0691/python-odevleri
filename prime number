@@ -1,0 +1,16 @@
+sayı = input("lütfen sayıyı giriniz:")
+
+n = len(sayı)
+toplam = 0
+
+if sayı.isdigit() :
+    for i in sayı:
+        toplam += int(i) ** n
+
+    if toplam == int(sayı):
+        print(f"Girdiğiniz {sayı} sayısı bir armstrong sayıdır")     
+    else:
+        print(f"girdiğiniz sayı {sayı} amstrong sayı değildir")
+else:
+    print(f"Geçersiz giriş; lütfen, string ifade, negatif ve float sayı dışında herhangi bir tam sayı giriniz:")
+    
